@@ -2,6 +2,7 @@
 
 myApp.controller('MainCtrl', ['$scope', '$http', function($scope, $http) {
     var me = $scope;
+    var videoFilesPath = "data/";
 
     $scope.init = function(){
         me.data = {};
@@ -55,7 +56,7 @@ myApp.controller('MainCtrl', ['$scope', '$http', function($scope, $http) {
             }
         });
 
-    }
+    };
 
     $scope.getData = function () {
         var that = this;
@@ -64,6 +65,15 @@ myApp.controller('MainCtrl', ['$scope', '$http', function($scope, $http) {
             {
                 $scope.data = response;
             });
+    };
+
+    $scope.playMovie = function (word) {
+        $("#categories").addClass("ng-hide");
+        $("#words").addClass("ng-hide");
+        $("#upBtn").addClass("ng-hide");
+        $("#jp_container_1").removeClass("ng-hide");
+        var player = new sl.video();
+        player.show(videoFilesPath + word.video);
     };
 
 }]);

@@ -5,15 +5,22 @@
     <meta name="viewport" content="width=device-width" />
     <title>Sign Language Application</title>
 
+    <link href="styles/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="scripts/jquery.mobile-1.4.5.css" />
+
+
 
     <script type="text/javascript" charset="utf-8" src="scripts/jquery.js"></script>
     <script type="text/javascript" charset="utf-8" src="scripts/jquery.mobile-1.4.5.js"></script>
     <script type="text/javascript" charset="utf-8" src="scripts/angular.js"></script>
     <script type="text/javascript" charset="utf-8" src="scripts/lodash.js"></script>
 
+    <!--player-->
+    <script type="text/javascript" src="scripts/jquery.jplayer.js"></script>
 
-    <script src="mainController.js"></script>
+
+    <script type="text/javascript" src="video.js"></script>
+    <script type="text/javascript" src="mainController.js"></script>
 
 
 </head>
@@ -25,7 +32,7 @@
                 <ul data-role="listview" data-inset="true">
                         
                     <li ng-repeat="category in data.categories"><a ng-click="showWords(category)" href="#">
-                             <img src="icons/Can_I.png">
+                             <img src="{{category.image}}"/>
                              <h1>{{category.name}}</h1>
                     </a>
                             
@@ -40,26 +47,61 @@
         <div id="words">
                 <ul data-role="listview" data-inset="true">
                         
-                    <li ng-repeat="word in data.currentWords"><a ng-click="showMovie()" href="#">
-                             <img src="icons/do.png">
+                    <li ng-repeat="word in data.currentWords"><a ng-click="playMovie(word)" href="#">
+                             <img src="{{word.image}}">
                              <h1>{{word.name}}</h1>
                     </a>
                             
                     </li>
                 </ul>
             <div>
-                <input  id="upBtn" class="ui-block-a" type="button" value="UP" ng-hide ng-click="showCategories()">
+                <input  id="upBtn" class="ui-block-a ng-hide" type="button" value="UP"  ng-click="showCategories()">
             </div>
         </div>
 
-        <!--div id="words" class="ui-grid-d">
-            <div>
-                <div ng-repeat="word in ctrl.currentWords" ng-click="ctrl.showMovie()" class="ui-block-a"><input type="button" data-icon="giraffe" value={{word.name}}></div>
+        <div id="jp_container_1" class="jp-video jp-video-360p ng-hide" role="application" aria-label="media player" >
+            <div class="jp-type-single">
+                <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+                <div class="jp-gui">
+                    <div class="jp-video-play">
+                        <button class="jp-video-play-icon" role="button" tabindex="0">play</button>
+                    </div>
+                    <div class="jp-interface">
+                        <div class="jp-progress">
+                            <div class="jp-seek-bar">
+                                <div class="jp-play-bar"></div>
+                            </div>
+                        </div>
+                        <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+                        <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+                        <div class="jp-controls-holder">
+                            <div class="jp-controls">
+                                <button class="jp-play" role="button" tabindex="0">play</button>
+                                <button class="jp-stop" role="button" tabindex="0">stop</button>
+                            </div>
+                            <!--div class="jp-volume-controls">
+                                <button class="jp-mute" role="button" tabindex="0">mute</button>
+                                <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+                                <div class="jp-volume-bar">
+                                    <div class="jp-volume-bar-value"></div>
+                                </div>
+                            </div-->
+                            <!--div class="jp-toggles">
+                                <button class="jp-repeat" role="button" tabindex="0">repeat</button>
+                                <button class="jp-full-screen" role="button" tabindex="0">full screen</button>
+                            </div-->
+                        </div>
+                        <!--div class="jp-details">
+                            <div class="jp-title" aria-label="title">&nbsp;</div>
+                        </div-->
+                    </div>
+                </div>
+                <div class="jp-no-solution">
+                    <span>Update Required</span>
+                    To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                </div>
             </div>
-            <div>
-                <input  id="upBtn" class="ui-block-a" type="button" value="UP" ng-hide ng-click="ctrl.showCategories()">
-            </div>
-        </div-->
+        </div>
 
 
         <!--div>
