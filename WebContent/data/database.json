@@ -1,22 +1,37 @@
 {
   "categories": [
     { "id": 1, "name": "Colors", "image": "icons/color.png" },
-    { "id": 2, "name": "Food", "image": "icons/food.png" },
+    { "id": 2, "name": "Fruits", "image": "icons/fruits.png" },
     { "id": 3, "name": "Numbers", "image": "icons/numbers.png" },
-    { "id": 4, "name": "Letters", "image": "icons/letters.png" },
-    { "id": 5, "name": "Fruits", "image": "icons/fruits.png" },
-    { "id": 6, "name": "Vegetables", "image": "icons/vegetables.png" }
+    { "id": 4, "name": "Vegetables", "image": "icons/vegetables.png" },
+    { "id": 5, "name": "Food", "image": "icons/food.png" },
+    { "id": 6, "name": "Letters", "image": "icons/letters.png" }
+
   ],
   "words": [
-    { "id": 1, "name": "Red", "categoryId": 1, "image": "icons/red.png","video": "path.mp4" },
-    { "id": 2, "name": "Yellow", "categoryId": 1, "image": "icons/yellow.png","video": "path.mp4" },
-    { "id": 3, "name": "Purple", "categoryId": 1, "image": "icons/purple.png","video": "path.mp4" },
-    { "id": 4, "name": "Blue", "categoryId": 1, "image": "icons/blue.png","video": "path.mp4" },
-    { "id": 5, "name": "White", "categoryId": 1, "image": "icons/white.png","video": "path.mp4" },
+    { "id": 1, "name": "Red", "categoryId": 1, "image": "icons/red.png","video": "Winner.mp4" },
+    { "id": 2, "name": "Yellow", "categoryId": 1, "image": "icons/yellow.png","video": "Golbary.mp4" },
+    { "id": 3, "name": "Purple", "categoryId": 1, "image": "icons/purple.png","video": "Tomado.mp4" },
+    { "id": 4, "name": "Blue", "categoryId": 1, "image": "icons/blue.png","video": "Winner.mp4" },
+    { "id": 5, "name": "White", "categoryId": 1, "image": "icons/white.png","video": "Tomado.mp4" },
 
-    { "id": 6, "name": "Pizza", "categoryId": 2, "image": "icons/Pizza.png","video": "path.mp4" },
-    { "id": 7, "name": "Tooast", "categoryId": 2, "image": "icons/toast.png","video": "path.mp4" },
-    { "id": 8, "name": "Candy", "categoryId": 2, "image": "icons/candy.png","video": "path.mp4" },
-    { "id": 9, "name": "French Fries", "categoryId": 2, "image": "icons/french_fries.png","video": "path.mp4" }
+    { "id": 6, "name": "Pizza", "categoryId": 5, "image": "icons/Pizza.png","video": "Winner.mp4" },
+    { "id": 7, "name": "Tooast", "categoryId": 5, "image": "icons/toast.png","video": "Golbary.mp4" },
+    { "id": 8, "name": "Candy", "categoryId": 5, "image": "icons/candy.png","video": "Golbary.mp4" },
+    { "id": 9, "name": "French Fries", "categoryId": 5, "image": "icons/french_fries.png","video": "Winner.mp4" },
+
+    { "id": 10, "name": "One", "categoryId": 3, "image": "icons/one.png","video": "Winner.mp4" },
+    { "id": 11, "name": "Two", "categoryId": 3, "image": "icons/two.png","video": "Golbary.mp4" },
+    { "id": 12, "name": "Three", "categoryId": 3, "image": "icons/three.png","video": "Golbary.mp4" },
+    { "id": 13, "name": "Four", "categoryId": 3, "image": "icons/four.png","video": "Winner.mp4" },
+    { "id": 14, "name": "Five", "categoryId": 3, "image": "icons/five.png","video": "Winner.mp4" },
+    { "id": 15, "name": "Six", "categoryId": 3, "image": "icons/six.png","video": "Golbary.mp4" },
+    { "id": 16, "name": "Seven", "categoryId": 3, "image": "icons/seven.png","video": "Golbary.mp4" },
+    { "id": 17, "name": "Eight", "categoryId": 3, "image": "icons/eight.png","video": "Winner.mp4" },
+
+    { "id": 18, "name": "אלף", "categoryId": 6, "image": "icons/one.png","video": "Winner.mp4" },
+    { "id": 19, "name": "בית", "categoryId": 6, "image": "icons/two.png","video": "Golbary.mp4" },
+    { "id": 20, "name": "גימל", "categoryId": 6, "image": "icons/three.png","video": "Golbary.mp4" },
+    { "id": 21, "name": "דלת", "categoryId": 6, "image": "icons/four.png","video": "Winner.mp4" }
   ]
 }
