@@ -1,0 +1,22 @@
+{
+  "categories": [
+    { "id": 1, "name": "Colors", "image": "icons/color.png" },
+    { "id": 2, "name": "Food", "image": "icons/food.png" },
+    { "id": 3, "name": "Numbers", "image": "icons/numbers.png" },
+    { "id": 4, "name": "Letters", "image": "icons/letters.png" },
+    { "id": 5, "name": "Fruits", "image": "icons/fruits.png" },
+    { "id": 6, "name": "Vegetables", "image": "icons/vegtables.png" }
+  ],
+  "words": [
+    { "id": 1, "name": "Red", "categoryId": 1, "image": "icons/red.png","video": "path.mp4" },
+    { "id": 2, "name": "Yellow", "categoryId": 1, "image": "icons/yellow.png","video": "path.mp4" },
+    { "id": 3, "name": "Purple", "categoryId": 1, "image": "icons/purple.png","video": "path.mp4" },
+    { "id": 4, "name": "Blue", "categoryId": 1, "image": "icons/blue.png","video": "path.mp4" },
+    { "id": 5, "name": "White", "categoryId": 1, "image": "icons/white.png","video": "path.mp4" },
+
+    { "id": 6, "name": "Pizza", "categoryId": 2, "image": "icons/Pizza.png","video": "path.mp4" },
+    { "id": 7, "name": "Tooast", "categoryId": 2, "image": "icons/toast.png","video": "path.mp4" },
+    { "id": 8, "name": "Candy", "categoryId": 2, "image": "icons/candy.png","video": "path.mp4" },
+    { "id": 9, "name": "French Fries", "categoryId": 2, "image": "icons/french_fries.png","video": "path.mp4" }
+  ]
+}

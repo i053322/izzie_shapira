@@ -67,7 +67,4 @@ HomeCtrl.prototype.showWords = function (category) {
         }
     });
 
-
-
-
 }
