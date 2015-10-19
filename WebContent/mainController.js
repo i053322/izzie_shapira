@@ -1,70 +1,70 @@
-﻿function HomeCtrl($scope) {
-    var me = this;
+﻿var myApp = angular.module('I-Sign',[]);
 
-    me.categories = [
-        { id: 1, name: "Color" },
-        { id: 2, name: "Food" },
-        { id: 3, name: "Numbers" },
-        { id: 4, name: "Letters" },
-        { id: 5, name: "Fruits" },
-        { id: 6, name: "Vegetables" },
-    ];
+myApp.controller('MainCtrl', ['$scope', '$http', function($scope, $http) {
+    var me = $scope;
 
-    me.words = [
-        { id: 1, name: "Red", categoryId: 1 },
-        { id: 2, name: "Yellow", categoryId: 1 },
-        { id: 3, name: "Purple", categoryId: 1 },
-        { id: 4, name: "Blue", categoryId: 1 },
-        { id: 5, name: "White", categoryId: 1 },
+    $scope.init = function(){
+        me.data = {};
 
-        { id: 6, name: "Pizza", categoryId: 2 },
-        { id: 7, name: "Tooast", categoryId: 2 },
-        { id: 8, name: "Candy", categoryId: 2 },
-        { id: 9, name: "French Fries" , categoryId: 2},
 
-    ];
+        me.getData();
+        me.data.currentWords = [];
 
-    me.currentWords = [];
+        return me.data;
 
+    }
     $scope.$watchCollection(function () {
-        return me.contacts;
+        return me.categories;
     }, function () {
         console.log("Changed");
     });
-}
 
-HomeCtrl.prototype.add = function () {
-    var me = this;
 
-    var contact = {
-        id: -1,
-        name: me.newContactName
+
+     $scope.add = function () {
+        var me = this;
+
+        var contact = {
+            id: -1,
+            name: me.newContactName
+        };
+
+        me.contacts.push(contact);
+    }
+
+    $scope.showCategories = function(){
+        var me = this;
+
+        $("#words").addClass("ng-hide");
+        $("#categories").removeClass("ng-hide");
+        $("#upBtn").addClass("ng-hide");
+
+    }
+
+    $scope.showWords = function (category) {
+        var me = this;
+
+        me.data.currentWords = [];
+        $("#categories").addClass("ng-hide");
+        $("#words").removeClass("ng-hide");
+        $("#upBtn").removeClass("ng-hide");
+        me.data.words.forEach(function(word) {
+            if(word.categoryId === category.id)
+            {
+                me.data.currentWords.push(word);
+            }
+        });
+
+    }
+
+    $scope.getData = function () {
+        var that = this;
+        $http.get('data/database.json')
+            .success(function(response)
+            {
+                $scope.data = response;
+            });
     };
 
-    me.contacts.push(contact);
-}
+}]);
 
-HomeCtrl.prototype.showCategories = function(){
-    var me = this;
-
-    $("#words").addClass("ng-hide");
-    $("#categories").removeClass("ng-hide");
-    $("#upBtn").assClass("ng-hide");
-
-}
-
-HomeCtrl.prototype.showWords = function (category) {
-    var me = this;
-
-    me.currentWords = [];
-    $("#categories").addClass("ng-hide");
-    $("#words").removeClass("ng-hide");
-    $("#upBtn").removeClass("ng-hide");
-    me.words.forEach(function(word) {
-        if(word.categoryId === category.id)
-        {
-            me.currentWords.push(word);
-        }
-    });
-
-}

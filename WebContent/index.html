@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="I-Sign">
 <head>
     <meta http-equiv='X-UA-Compatible' content='IE=edge' />
     <meta name="viewport" content="width=device-width" />
@@ -19,12 +19,12 @@
 </head>
 
 <body>
-    <div ng-controller="HomeCtrl as ctrl">
+    <div ng-controller="MainCtrl as ctrl" ng-init="data=init()">
 
         <div id="categories">
                 <ul data-role="listview" data-inset="true">
                         
-                    <li ng-repeat="category in ctrl.categories"><a ng-click="ctrl.showWords(category)" href="#">
+                    <li ng-repeat="category in data.categories"><a ng-click="showWords(category)" href="#">
                              <img src="icons/Can_I.png">
                              <h1>{{category.name}}</h1>
                     </a>
@@ -34,21 +34,21 @@
             </div>
 
             <!--div id="categories1" class="ui-grid-d"}>
-                <div ng-repeat="category in ctrl.categories" ng-click="ctrl.showWords(category)" class="ui-block-a"><input type="button" data-icon="giraffe" value={{category.name}}></div>
+                <div ng-repeat="category in ctrl.categories" ng-click="showWords(category)" class="ui-block-a"><input type="button" data-icon="giraffe" value={{category.name}}></div>
         </div-->
 
         <div id="words">
                 <ul data-role="listview" data-inset="true">
                         
-                    <li ng-repeat="word in ctrl.currentWords"><a ng-click="ctrl.showMovie()" href="#">
-                             <img src="icons/Can_I.png">
+                    <li ng-repeat="word in data.currentWords"><a ng-click="showMovie()" href="#">
+                             <img src="icons/do.png">
                              <h1>{{word.name}}</h1>
                     </a>
                             
                     </li>
                 </ul>
             <div>
-                <input  id="upBtn" class="ui-block-a" type="button" value="UP" ng-hide ng-click="ctrl.showCategories()">
+                <input  id="upBtn" class="ui-block-a" type="button" value="UP" ng-hide ng-click="showCategories()">
             </div>
         </div>
 
