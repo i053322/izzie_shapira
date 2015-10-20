@@ -5,7 +5,7 @@
     { "id": 3, "name": "Numbers", "image": "icons/numbers.png" },
     { "id": 4, "name": "Letters", "image": "icons/letters.png" },
     { "id": 5, "name": "Fruits", "image": "icons/fruits.png" },
-    { "id": 6, "name": "Vegetables", "image": "icons/vegtables.png" }
+    { "id": 6, "name": "Vegetables", "image": "icons/vegetables.png" }
   ],
   "words": [
     { "id": 1, "name": "Red", "categoryId": 1, "image": "icons/red.png","video": "path.mp4" },

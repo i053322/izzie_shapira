@@ -25,7 +25,7 @@
                 <ul data-role="listview" data-inset="true">
                         
                     <li ng-repeat="category in data.categories"><a ng-click="showWords(category)" href="#">
-                             <img src="icons/Can_I.png">
+                             <img ng-src="{{category.image}}">
                              <h1>{{category.name}}</h1>
                     </a>
                             
@@ -41,7 +41,7 @@
                 <ul data-role="listview" data-inset="true">
                         
                     <li ng-repeat="word in data.currentWords"><a ng-click="showMovie()" href="#">
-                             <img src="icons/do.png">
+                             <img ng-src="{{word.image}}">
                              <h1>{{word.name}}</h1>
                     </a>
                             
