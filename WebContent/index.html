@@ -51,7 +51,7 @@
             <div data-role="navbar">
                 <input type="search" name="search-1" id="search-1" value="">
             </div>
-            <h1>אותיות</h1>
+            <h1>{{data.currentCategory.name}}</h1>
         </div>
         <div id="words">
             <ul data-role="listview"  data-inset="true">
@@ -66,7 +66,7 @@
 
     <div data-role="page" id="moviePage">
         <div data-role="header" data-add-back-btn="true">
-            <h1>מלה</h1>
+            <h1>{{data.currentWord.name}}</h1>
         </div>
         <div id="jp_container_1" class="jp-video jp-video-360p" role="content" aria-label="media player">
             <div class="jp-type-single">

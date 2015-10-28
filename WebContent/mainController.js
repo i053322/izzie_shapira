@@ -36,6 +36,7 @@ myApp.controller('MainCtrl', ['$scope', '$http', function($scope, $http) {
     $scope.showWords = function (category) {
         var me = this;
 
+        me.data.currentCategory = category;
         me.data.currentWords = [];
         me.data.words.forEach(function(word) {
             if(word.categoryId === category.id)
@@ -57,6 +58,7 @@ myApp.controller('MainCtrl', ['$scope', '$http', function($scope, $http) {
     };
 
     $scope.playMovie = function (word) {
+        me.data.currentWord = word;
         var player = new sl.video();
         player.show(videoFilesPath + word.video);
     };

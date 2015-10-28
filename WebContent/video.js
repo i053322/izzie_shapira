@@ -28,7 +28,7 @@ sl.video = (function() {
                 useStateClassSkin: false,
                 autoBlur: false,
                 smoothPlayBar: false,
-                fullWindow: true,
+                fullWindow: false,
                 keyEnabled: true,
                 remainingDuration: true,
                 toggleDuration: true
