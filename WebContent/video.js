@@ -25,9 +25,9 @@ sl.video = (function() {
                     height: "460px",
                     cssClass: "jp-video-360p"
                 },
-                useStateClassSkin: true,
+                useStateClassSkin: false,
                 autoBlur: false,
-                smoothPlayBar: true,
+                smoothPlayBar: false,
                 fullWindow: true,
                 keyEnabled: true,
                 remainingDuration: true,
