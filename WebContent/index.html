@@ -1,8 +1,9 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html ng-app="I-Sign">
 <head>
     <meta http-equiv='X-UA-Compatible' content='IE=edge' />
     <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8">
     <title>Sign Language Application</title>
 
     <link href="styles/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
@@ -29,30 +30,30 @@
     <div ng-controller="MainCtrl as ctrl" ng-init="data=init()">
 
         <div id="categories">
-                <ul data-role="listview" data-inset="true">
-                        
-                    <li ng-repeat="category in data.categories"><a ng-click="showWords(category)" href="#">
-                             <img src="{{category.image}}"/>
-                             <h1>{{category.name}}</h1>
-                    </a>
-                            
-                    </li>
+            Â Â Â Â <ul data-role="listview"Â data-inset="true">
+            Â Â Â Â Â Â Â Â Â Â Â Â 
+            Â Â Â Â Â Â Â Â <li ng-repeat="category in data.categories"><a ng-click="showWords(category)" href="#">
+            Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â <img src="{{category.image}}"/>
+            Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â <h1>{{category.name}}</h1>
+            Â Â Â Â Â Â Â Â </a>
+            Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â 
+            Â Â Â Â Â Â Â Â </li>
                  </ul>
             </div>
 
             <!--div id="categories1" class="ui-grid-d"}>
-                <div ng-repeat="category in ctrl.categories" ng-click="showWords(category)" class="ui-block-a"><input type="button" data-icon="giraffe" value={{category.name}}></div>
+            Â Â Â Â <div ng-repeat="category in ctrl.categories" ng-click="showWords(category)" class="ui-block-a"><input type="button" data-icon="giraffe" value={{category.name}}></div>
         </div-->
 
         <div id="words">
-                <ul data-role="listview" data-inset="true">
-                        
-                    <li ng-repeat="word in data.currentWords"><a ng-click="playMovie(word)" href="#">
-                             <img src="{{word.image}}">
-                             <h1>{{word.name}}</h1>
-                    </a>
-                            
-                    </li>
+            Â Â Â Â <ul data-role="listview"Â data-inset="true">
+            Â Â Â Â Â Â Â Â Â Â Â Â 
+            Â Â Â Â Â Â Â Â <li ng-repeat="word in data.currentWords"><a ng-click="playMovie(word)" href="#">
+            Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â <img src="{{word.image}}">
+            Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â <h1>{{word.name}}</h1>
+            Â Â Â Â Â Â Â Â </a>
+            Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â 
+            Â Â Â Â Â Â Â Â </li>
                 </ul>
             <div>
                 <input  id="upBtn" class="ui-block-a ng-hide" type="button" value="UP"  ng-click="showCategories()">

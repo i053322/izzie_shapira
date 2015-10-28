@@ -1,6 +1,6 @@
-{
+ο»Ώ{
   "categories": [
-    { "id": 1, "name": "Colors", "image": "icons/color.png" },
+    { "id": 1, "name": "Χ¦Χ‘ΧΆΧ™Χ", "image": "icons/color.png" },
     { "id": 2, "name": "Fruits", "image": "icons/fruits.png" },
     { "id": 3, "name": "Numbers", "image": "icons/numbers.png" },
     { "id": 4, "name": "Vegetables", "image": "icons/vegetables.png" },
@@ -11,9 +11,9 @@
   "words": [
     { "id": 1, "name": "Red", "categoryId": 1, "image": "icons/red.png","video": "Winner.mp4" },
     { "id": 2, "name": "Yellow", "categoryId": 1, "image": "icons/yellow.png","video": "Golbary.mp4" },
-    { "id": 3, "name": "Purple", "categoryId": 1, "image": "icons/purple.png","video": "Tomado.mp4" },
+    { "id": 3, "name": "Purple", "categoryId": 1, "image": "icons/purple.png","video": "Tornado.mp4" },
     { "id": 4, "name": "Blue", "categoryId": 1, "image": "icons/blue.png","video": "Winner.mp4" },
-    { "id": 5, "name": "White", "categoryId": 1, "image": "icons/white.png","video": "Tomado.mp4" },
+    { "id": 5, "name": "White", "categoryId": 1, "image": "icons/white.png","video": "Tornado.mp4" },
 
     { "id": 6, "name": "Pizza", "categoryId": 5, "image": "icons/Pizza.png","video": "Winner.mp4" },
     { "id": 7, "name": "Tooast", "categoryId": 5, "image": "icons/toast.png","video": "Golbary.mp4" },
@@ -29,9 +29,9 @@
     { "id": 16, "name": "Seven", "categoryId": 3, "image": "icons/seven.png","video": "Golbary.mp4" },
     { "id": 17, "name": "Eight", "categoryId": 3, "image": "icons/eight.png","video": "Winner.mp4" },
 
-    { "id": 18, "name": "ΰμσ", "categoryId": 6, "image": "icons/one.png","video": "Winner.mp4" },
-    { "id": 19, "name": "αιϊ", "categoryId": 6, "image": "icons/two.png","video": "Golbary.mp4" },
-    { "id": 20, "name": "βιξμ", "categoryId": 6, "image": "icons/three.png","video": "Golbary.mp4" },
-    { "id": 21, "name": "γμϊ", "categoryId": 6, "image": "icons/four.png","video": "Winner.mp4" }
+    { "id": 18, "name": "ΧΧΧ£", "categoryId": 6, "image": "icons/one.png","video": "Winner.mp4" },
+    { "id": 19, "name": "Χ‘Χ™Χª", "categoryId": 6, "image": "icons/two.png","video": "Golbary.mp4" },
+    { "id": 20, "name": "Χ’Χ™ΧΧ", "categoryId": 6, "image": "icons/three.png","video": "Golbary.mp4" },
+    { "id": 21, "name": "Χ“ΧΧ“", "categoryId": 6, "image": "icons/four.png","video": "Winner.mp4" }
   ]
 }

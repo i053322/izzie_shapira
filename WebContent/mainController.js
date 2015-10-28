@@ -60,11 +60,12 @@ myApp.controller('MainCtrl', ['$scope', '$http', function($scope, $http) {
 
     $scope.getData = function () {
         var that = this;
-        $http.get('data/database.json')
-            .success(function(response)
-            {
-                $scope.data = response;
-            });
+        $http.get('data/database.json',
+            {header : {'Content-Type' : 'application/json; charset=UTF-8'}}
+        ).success(function(response)
+        {
+            $scope.data = response;
+        });
     };
 
     $scope.playMovie = function (word) {
