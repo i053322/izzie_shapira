@@ -33,22 +33,10 @@ myApp.controller('MainCtrl', ['$scope', '$http', function($scope, $http) {
         me.contacts.push(contact);
     }
 
-    $scope.showCategories = function(){
-        var me = this;
-
-        $("#words").addClass("ng-hide");
-        $("#categories").removeClass("ng-hide");
-        $("#upBtn").addClass("ng-hide");
-
-    }
-
     $scope.showWords = function (category) {
         var me = this;
 
         me.data.currentWords = [];
-        $("#categories").addClass("ng-hide");
-        $("#words").removeClass("ng-hide");
-        $("#upBtn").removeClass("ng-hide");
         me.data.words.forEach(function(word) {
             if(word.categoryId === category.id)
             {
@@ -69,10 +57,6 @@ myApp.controller('MainCtrl', ['$scope', '$http', function($scope, $http) {
     };
 
     $scope.playMovie = function (word) {
-        $("#categories").addClass("ng-hide");
-        $("#words").addClass("ng-hide");
-        $("#upBtn").addClass("ng-hide");
-        $("#jp_container_1").removeClass("ng-hide");
         var player = new sl.video();
         player.show(videoFilesPath + word.video);
     };
