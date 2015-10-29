@@ -13,14 +13,13 @@ myApp.controller('MainCtrl', ['$scope', '$http', function($scope, $http) {
 
         return me.data;
 
-    }
+    };
+
     $scope.$watchCollection(function () {
         return me.categories;
     }, function () {
         console.log("Changed");
     });
-
-
 
      $scope.add = function () {
         var me = this;
@@ -31,7 +30,7 @@ myApp.controller('MainCtrl', ['$scope', '$http', function($scope, $http) {
         };
 
         me.contacts.push(contact);
-    }
+    };
 
     $scope.showWords = function (category) {
         var me = this;

@@ -25,21 +25,18 @@
 <body>
 <div ng-controller="MainCtrl as ctrl" ng-init="data=init()">
     <div data-role="page" id="categoriesPage">
-        <div data-role="header" data-position="fixed">
-            <div data-role="navbar">
-                <input type="search" name="search-1" id="search-1" value="">
-            </div>
+        <div data-role="header">
+            <a href="#searchPage" data-role="button" data-icon="search" data-theme="b" data-iconpos="notext" class="ui-btn-left">Search</a>
             <h1>קטגוריות</h1>
         </div>
 
         <div id="categories">  
             <ul data-role="listview"  data-inset="true">            
-                <li ng-repeat="category in data.categories"><a ng-click="showWords(category)" href="#wordPage">
-                                     <img src="{{category.image}}"/>
-                                     <h1>{{category.name}}</h1>
-                            </a>
-                                    
-                            
+                <li ng-repeat="category in data.categories">
+                    <a ng-click="showWords(category)" href="#wordPage">
+                        <img src="{{category.image}}"/>
+                        <h1>{{category.name}}</h1>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -48,9 +45,7 @@
 
     <div data-role="page" id="wordPage">
         <div data-role="header" data-position="fixed" data-add-back-btn="true">
-            <div data-role="navbar">
-                <input type="search" name="search-1" id="search-1" value="">
-            </div>
+            <a href="#searchPage" data-role="button" data-icon="search" data-theme="b" data-iconpos="notext" class="ui-btn-left">Search</a>
             <h1>{{data.currentCategory.name}}</h1>
         </div>
         <div id="words">
@@ -111,6 +106,36 @@
             </div>
         </div>
     </div>
+
+    <div data-role="page" id="searchPage">
+        <div data-role="navbar">
+            <input id="search" ng-model="query">
+        </div>
+
+        <div id="categories">  
+            <ul data-role="listview"  data-inset="true">            
+                <li ng-repeat="category in data.categories  | filter:query">
+                    <a ng-click="showWords(category)" href="#wordPage">
+                        <img src="{{category.image}}"/>
+                        <h1>{{category.name}}</h1>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="words">
+            <ul data-role="listview"  data-inset="true">
+                <li ng-repeat="word in data.words  | filter:query">
+                    <a ng-click="playMovie(word)" href="#moviePage">
+                        <img src="{{word.image}}">
+                        <h1>{{word.name}}</h1>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
 </div>
 
     <!--div>
