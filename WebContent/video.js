@@ -45,6 +45,10 @@ sl.video = (function() {
 
     };
 
+    video.prototype.stop = function() {
+        $("#jquery_jplayer_1").jPlayer("clearMedia");
+    };
+
     return video;
 })();
 

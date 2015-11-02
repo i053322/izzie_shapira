@@ -35,6 +35,7 @@ myApp.controller('MainCtrl', ['$scope', '$http', function($scope, $http) {
     };
 
     $scope.back = function(){
+        me.player.stop();
         $scope.moveToCategories();
     }
 
