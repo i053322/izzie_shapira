@@ -5,6 +5,8 @@ myApp.controller('MainCtrl', ['$scope', '$http', function($scope, $http) {
     var videoFilesPath = "data/";
 
     $scope.init = function(){
+        me.player = new sl.video();
+
         me.data = {};
 
 
@@ -58,8 +60,7 @@ myApp.controller('MainCtrl', ['$scope', '$http', function($scope, $http) {
 
     $scope.playMovie = function (word) {
         me.data.currentWord = word;
-        var player = new sl.video();
-        player.show(videoFilesPath + word.video);
+        me.player.show(videoFilesPath + word.video);
     };
 
 }]);
