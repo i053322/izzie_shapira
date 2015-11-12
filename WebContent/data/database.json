@@ -7,7 +7,10 @@
     { "id": 5, "name": "זמן משחק", "image": "icons/play_time_category.png" },
     { "id": 6, "name": "זמנים", "image": "icons/time.png" },
     { "id": 7, "name": "שמות תואר", "image": "icons/adjective.png" },
-    { "id": 8, "name": "בעלי חיים", "image": "icons/animals.png" }
+    { "id": 8, "name": "בעלי חיים", "image": "icons/animals.png" },
+    { "id": 9, "name": "חלקי גוף", "image": "icons/body_parts.png" },
+    { "id": 10, "name": "טבע", "image": "icons/nature.png" },
+    { "id": 11, "name": "ירקות", "image": "icons/vegetables.png" }
 
   ],
   "words": [
@@ -323,7 +326,64 @@
     { "id": 32, "name": "תוכי", "categoryId": 8, "image": "icons/parrot.png","video": "Winner.mp4" },
     { "id": 33, "name": "תיש", "categoryId": 8, "image": "icons/goat.png","video": "Winner.mp4" },
     { "id": 34, "name": "תנין", "categoryId": 8, "image": "icons/crocodile.png","video": "Winner.mp4" },
-    { "id": 35, "name": "תרנגולת", "categoryId": 8, "image": "icons/chicken_animal.png","video": "Winner.mp4" }
+    { "id": 35, "name": "תרנגולת", "categoryId": 8, "image": "icons/chicken_animal.png","video": "Winner.mp4" },
+
+
+
+    { "id": 1, "name": "אזניים", "categoryId": 9, "image": "icons/ear_2.png","video": "Winner.mp4" },
+    { "id": 2, "name": "אף", "categoryId": 9, "image": "icons/nose_2.png","video": "Winner.mp4" },
+    { "id": 3, "name": "אצבעות", "categoryId": 9, "image": "icons/finger.png","video": "Winner.mp4" },
+    { "id": 4, "name": "בטן", "categoryId": 9, "image": "icons/stomach_2.png","video": "Winner.mp4" },
+    { "id": 5, "name": "גב", "categoryId": 9, "image": "icons/back.png","video": "Winner.mp4" },
+    { "id": 6, "name": "יד", "categoryId": 9, "image": "icons/hand_2.png","video": "Winner.mp4" },
+    { "id": 7, "name": "רגל", "categoryId": 9, "image": "icons/foot_2.png","video": "Winner.mp4" },
+    { "id": 8, "name": "עין", "categoryId": 9, "image": "icons/eye.png","video": "Winner.mp4" },
+    { "id": 9, "name": "פה", "categoryId": 9, "image": "icons/mouth2.png","video": "Winner.mp4" },
+    { "id": 10, "name": "ראש", "categoryId": 9, "image": "icons/head_3.png","video": "Winner.mp4" },
+    { "id": 11, "name": "שיער", "categoryId": 9, "image": "icons/hair.png","video": "Winner.mp4" },
+    { "id": 12, "name": "שיניים", "categoryId": 9, "image": "icons/teeth.png","video": "Winner.mp4" },
+
+
+
+    { "id": 1, "name": "אדמה", "categoryId": 10, "image": "icons/ground.png","video": "Winner.mp4" },
+    { "id": 2, "name": "אבן", "categoryId": 10, "image": "icons/rock_1.png","video": "Winner.mp4" },
+    { "id": 3, "name": "ברק", "categoryId": 10, "image": "icons/lightning_bolt.png","video": "Winner.mp4" },
+    { "id": 4, "name": "גשם", "categoryId": 10, "image": "icons/rain_3.png","video": "Winner.mp4" },
+    { "id": 5, "name": "דשא", "categoryId": 10, "image": "icons/grass.png","video": "Winner.mp4" },
+    { "id": 6, "name": "חול", "categoryId": 10, "image": "icons/sand.png","video": "Winner.mp4" },
+    { "id": 7, "name": "ירח", "categoryId": 10, "image": "icons/moon.png","video": "Winner.mp4" },
+    { "id": 8, "name": "כוכבים", "categoryId": 10, "image": "icons/stars.png","video": "Winner.mp4" },
+    { "id": 9, "name": "עלה", "categoryId": 10, "image": "icons/leaf.png","video": "Winner.mp4" },
+    { "id": 10, "name": "עננים", "categoryId": 10, "image": "icons/cloud.png","video": "Winner.mp4" },
+    { "id": 11, "name": "עץ", "categoryId": 10, "image": "icons/tree.png","video": "Winner.mp4" },
+    { "id": 12, "name": "פארק", "categoryId": 10, "image": "icons/park_2.png","video": "Winner.mp4" },
+    { "id": 13, "name": "פרדס", "categoryId": 10, "image": "icons/grove.png","video": "Winner.mp4" },
+    { "id": 14, "name": "פרח", "categoryId": 10, "image": "icons/flower.png","video": "Winner.mp4" },
+    { "id": 15, "name": "קשת", "categoryId": 10, "image": "icons/rainbow.png","video": "Winner.mp4" },
+    { "id": 16, "name": "רוח", "categoryId": 10, "image": "icons/wind_nature.png","video": "Winner.mp4" },
+    { "id": 17, "name": "רעם", "categoryId": 10, "image": "icons/thunder.png","video": "Winner.mp4" },
+    { "id": 18, "name": "שלג", "categoryId": 10, "image": "icons/snow.png","video": "Winner.mp4" },
+    { "id": 19, "name": "שמיים", "categoryId": 10, "image": "icons/sky.png","video": "Winner.mp4" },
+    { "id": 20, "name": "שמש", "categoryId": 10, "image": "icons/sun.png","video": "Winner.mp4" },
+
+
+    { "id": 1, "name": "אבוקדו", "categoryId": 11, "image": "icons/avocado.png","video": "Winner.mp4" },
+    { "id": 2, "name": "גזר", "categoryId": 11, "image": "icons/carrot.png","video": "Winner.mp4" },
+    { "id": 3, "name": "בצל", "categoryId": 11, "image": "icons/onion_yellow.png","video": "Winner.mp4" },
+    { "id": 4, "name": "זית", "categoryId": 11, "image": "icons/olives_green.png","video": "Winner.mp4" },
+    { "id": 5, "name": "חסה", "categoryId": 11, "image": "icons/lettuce.png","video": "Winner.mp4" },
+    { "id": 6, "name": "מלפפון", "categoryId": 11, "image": "icons/cucumber.png","video": "Winner.mp4" },
+    { "id": 7, "name": "עגבניה", "categoryId": 11, "image": "icons/tomato_slices.png","video": "Winner.mp4" },
+    { "id": 8, "name": "פלפל", "categoryId": 11, "image": "icons/pepper_red.png","video": "Winner.mp4" },
+    { "id": 9, "name": "בטטה", "categoryId": 11, "image": "icons/yam.png","video": "Winner.mp4" },
+    { "id": 10, "name": "קישוא", "categoryId": 11, "image": "icons/squash_yellow.png","video": "Winner.mp4" },
+    { "id": 11, "name": "חציל", "categoryId": 11, "image": "icons/eggplant.png","video": "Winner.mp4" },
+    { "id": 12, "name": "כרוב", "categoryId": 11, "image": "icons/cabbage.png","video": "Winner.mp4" },
+    { "id": 13, "name": "אפונה", "categoryId": 11, "image": "icons/peas.png","video": "Winner.mp4" },
+    { "id": 14, "name": "תפוח אדמה", "categoryId": 11, "image": "icons/potato.png","video": "Winner.mp4" }
+
+
+
 
 
   ]
